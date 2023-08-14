@@ -14,5 +14,9 @@ CHIP And {
     OUT out;
 
     PARTS:
-    // Put your code here:
+    Nand(a=a,b=b,out=c);        // Nand 게이트의 a와 b에 각각 인풋으로 받은 a와 b를 넣어 주고, out값을 c에 대입
+    Nand(a=c,b=c,out=out);      // Nand 게이트의 a와 b에 각각 c를 대입한다. 
+                                // 17라인에서 Nand게이트를 거친 c는, 인풋 a와 b가 모두 1이었을 때만 0이 되었을 것이므로,
+                                // 18라인에서 0과 0을 다시 Nand게이트에 통과시킨 결과값인 1이 out으로 도출된다. 
+                                // 이로써 1과 1을 인풋으로 줄 때 1을 아웃풋으로 받는 And게이트가 만들어진다. 
 }

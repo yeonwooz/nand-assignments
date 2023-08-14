@@ -13,5 +13,6 @@ CHIP Not {
     OUT out;
 
     PARTS:
-    // Put your code here:
+    Nand(a=in,b=in,out=out);       // 같은 값을 Nand 게이트에 통과시키면 반대값이 나온다. Not 게이트가 만들어진다. 
 }
+
