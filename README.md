@@ -3,7 +3,7 @@
 1. execute HardwareSimulator
 
 ```
-sh HardwareSimulator.sh
+sh tools/HardwareSimulator.sh
 ```
 
 2. Load Chip (hdl)
